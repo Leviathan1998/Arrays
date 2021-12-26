@@ -1,25 +1,36 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{4AD491A9-5AAB-49E1-8061-87FD9D8F7331}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4AD491A9-5AAB-49E1-8061-87FD9D8F7331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AD491A9-5AAB-49E1-8061-87FD9D8F7331}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AD491A9-5AAB-49E1-8061-87FD9D8F7331}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AD491A9-5AAB-49E1-8061-87FD9D8F7331}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DFD50B08-89F5-42E4-AE53-BD9E338AA201}
-	EndGlobalSection
-EndGlobal
+using System;
+
+namespace Arrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[] { 1, 9, 4, 5, 6, 9, 2 };
+            // Dispalys value of first element of array
+            int y = array.First();
+            {
+                Console.WriteLine($"Value of first element in array is {y}");
+            }
+
+            // Displays in console value of last element of array
+            int i = array.Last();
+            {
+                Console.WriteLine($"Value of last element in array is {i}");
+            }
+            // Displays value of Max element in array
+
+
+            int p = array.Max();
+            {
+                Console.WriteLine($"Value of maximum element in array is {p}");
+            }
+            // Displays sum of all elements in array
+
+            int x = array.Sum();
+            {
+                Console.WriteLine($"Sum of all elements in array is {x}");
+            }
+        }
+    }
+}
